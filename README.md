@@ -4,3 +4,7 @@ This project aims to develop a Smoke/Combustible Gas detector using ESP32 and MQ
 Also to set up wifi credentials without hardcoding the SSID and password directly in code, a prior bluetooth connection is established via smartphone, using Bluetooth Terminal HC-05 application.
 
 ### Hardware Implementation
+The hardware schematic contains the following devices: <br \>
+* ESP32-WROOM-32 (integrated Wifi and Bluetooth)
+* MQ-2 Smoke/Combustible Gas sensor
+* 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
