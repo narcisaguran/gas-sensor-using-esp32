@@ -11,12 +11,12 @@ The hardware schematic contains the following devices:
 * ESP32-WROOM-32 (integrated Wifi and Bluetooth), ADC resolution of 12-bits (0-4095)
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
-
+ <br />
 <div align="center">
 <img src="images/hardware.png" width="600"/>
 <p>Hardware Implementation</p>
 </div>
-
+ <br />
 ### Software Implementation
 The following steps describe the functionality of the project: 
 * boot/reboot device
@@ -25,22 +25,22 @@ The following steps describe the functionality of the project:
 * publish data on ThingSpeak
 * if value is above threshold enter in 'aware state' (read 5 times and see if 2 high values above the threshold are met, if so it means that gas is detected in the room)
 * if gas detected in room send email to the owner.
-
+ <br />
 <div align="center">
 <img src="images/software_diagram.png" width="1300"/>
 <p>Software Diagram</p>
 </div>
-
+ <br />
 ### Wifi connection 
 The Wifi connection is set up using Bluetooth using *Bluetooth Teminal HC-5 application*. [[1]](https://github.com/narcisaguran/gas-sensor-using-esp32/blob/main/README.md#resources) <br />
 First connect to the Bluetooth device using the app and give Wifi credentials (SSID and password). After that the wifi connection is established and the Bluetooth connection is disabled. Wifi and Bluetooth use the same antenna on ESP32 device and they cannot coexist. The Wifi credentials are saved and loaded every time the ESP device is powered. <br />
 If you want to change the credentials just reboot the device and introduce them again in application.
-
+ <br />
 <div align="center">
-<img src="images/bluetooth_app.jpg" width="500"/>
+<img src="images/bluetooth_app.jpg" width="400"/>
 <p>Wifi connection from application</p>
 </div>
-
+ <br />
 
 ### ThingSpeak data ingestion
 Every time data is read from the sensor it is saved online through ThingSpeak API along with Wifi received signal strength indicator (RSSI). I used a ThingSpeak private channel to do that, and data can also be viewed in real time on mobile phone with ThingView Free app.
