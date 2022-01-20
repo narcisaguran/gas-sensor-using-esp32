@@ -27,7 +27,7 @@ The following steps describe the functionality of the project:
 * if gas detected in room send email to the owner.
 
 <div align="center">
-<img src="images/software_diagram.png" width="900"/>
+<img src="images/software_diagram.png" width="1100"/>
 <p>Software Diagram</p>
 </div>
 
