@@ -11,3 +11,12 @@ The hardware schematic contains the following devices: <br \>
 * ESP32-WROOM-32 (integrated Wifi and Bluetooth)
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
+
+### Software Implementation
+The following steps describe the functionality of the project: < br \>
+* boot/reboot device
+* introduce Wifi credentials from application and connect to it
+* read data coming from MQ-2 sensor
+* publish data on ThingSpeak
+* if value is above threshold enter in 'aware state' (read 5 times and see if 2 high values above the threshold are met, if so it means that gas is detected in the room)
+* if gas detected in room send email to the owner.
