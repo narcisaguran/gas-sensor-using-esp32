@@ -36,6 +36,12 @@ The Wifi connection is set up using Bluetooth using Bluetooth Teminal HC-5 appli
 First connect to the Bluetooth device using the app and give Wifi credentials (SSID and password). After that the wifi connection is established and the Bluetooth connection is disabled. Wifi and Bluetooth use the same antenna on ESP32 device and they cannot coexist. The Wifi credentials are saved and loaded every time the ESP device is powered. <br />
 If you want to change the credentials just reboot the device and introduce them again in application.
 
+<div align="center">
+<img src="images/bluetooth_app.jpg" width="700"/>
+<p>Wifi connection from application</p>
+</div>
+
+
 ### ThingSpeak data ingestion
 Every time data is read from the sensor it is saved online through ThingSpeak API along with Wifi received signal strength indicator (RSSI). I used a ThingSpeak private channel to do that, and data can also be viewed in real time on mobile phone with ThingView Free app.
 
