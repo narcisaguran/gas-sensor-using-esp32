@@ -12,6 +12,11 @@ The hardware schematic contains the following devices:
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
 
+<div align="center">
+<img src="images/hardware.png" width="600"/>
+<p>Hardware Implementation</p>
+</div>
+
 ### Software Implementation
 The following steps describe the functionality of the project: 
 * boot/reboot device
