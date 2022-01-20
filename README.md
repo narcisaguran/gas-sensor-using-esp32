@@ -34,8 +34,8 @@ The project has the feature to send an alert email to the apartment owner using 
 A gmail address was created prior to sending the alert message. This is the email address used to send messages to the hardcoded owner address.
 
 #### Resources:
-* [1]: https://robotzero.one/esp32-wi-fi-connection-bluetooth/
-* [2]: https://www.circuitbasics.com/how-to-send-a-text-message-with-ifttt/
+* [1] https://robotzero.one/esp32-wi-fi-connection-bluetooth/
+* [2] https://www.circuitbasics.com/how-to-send-a-text-message-with-ifttt/
 
 
 
