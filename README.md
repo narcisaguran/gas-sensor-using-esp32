@@ -14,7 +14,7 @@ The hardware schematic contains the following devices:
  <br />
 <div align="center">
 <img src="images/hardware.png" width="600"/>
-<p>Hardware Implementation</p>
+<p>Fig.1 - Hardware Implementation</p>
 </div>
 
 ### Software Implementation
@@ -28,7 +28,7 @@ The following steps describe the functionality of the project:
  <br />
 <div align="center">
 <img src="images/software_diagram.png" width="1300"/>
-<p>Software Diagram</p>
+<p>Fig.2 - Software Diagram</p>
 </div>
 
 ### Wifi connection 
@@ -38,11 +38,16 @@ If you want to change the credentials just reboot the device and introduce them 
 
 <div align="center">
 <img src="images/bluetooth_app.jpg" width="400"/>
-<p>Wifi connection from application</p>
+<p>Fig.3 - Wifi connection from application</p>
 </div>
 
 ### ThingSpeak data ingestion
 Every time data is read from the sensor it is saved online through ThingSpeak API along with Wifi received signal strength indicator (RSSI). I used a ThingSpeak private channel to do that, and data can also be viewed in real time on mobile phone with ThingView Free app.
+
+<div align="center">
+<img src="images/thingspeak_app.jpg" width="400"/>
+<p>Fig.4 - Data visualization from ThingSpeak View application</p>
+</div>
 
 ### Email alert
 The project has the feature to send an alert email to the apartment owner using IFTTT service. The email address is hardcoded in the json that is sent by the http post request. [[2]](https://github.com/narcisaguran/gas-sensor-using-esp32/blob/main/README.md#resources) <br />
