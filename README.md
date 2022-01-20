@@ -22,7 +22,7 @@ The following steps describe the functionality of the project:
 * if gas detected in room send email to the owner.
 
 ### Wifi conncetion 
-The Wifi connection is set up using Bluetooth using Bluetooth Teminal HC-5 application. [1] <br />
+The Wifi connection is set up using Bluetooth using Bluetooth Teminal HC-5 application. [1] (#) <br />
 First connect to the Bluetooth device using the app and give Wifi credentials (SSID and password). After that the wifi connection is established and the Bluetooth connection is disabled. Wifi and Bluetooth use the same antenna on ESP32 device and they cannot coexist. The Wifi credentials are saved and loaded every time the ESP device is powered. <br />
 If you want to change the credentials just reboot the device and introduce them again in application.
 
@@ -33,7 +33,7 @@ Every time data is read from the sensor it is saved online through ThingSpeak AP
 The project has the feature to send an alert email to the apartment owner using IFTTT service. The email address is hardcoded in the json that is sent by the http post request. [2] <br />
 A gmail address was created prior to sending the alert message. This is the email address used to send messages to the hardcoded owner address.
 
-Resources:
+#### Resources:
 * [1]
 * [2]
 
