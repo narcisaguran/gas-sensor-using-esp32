@@ -8,9 +8,14 @@ Also to set up wifi credentials without hardcoding the SSID and password directl
 
 ### Hardware Implementation
 The hardware schematic contains the following devices: 
-* ESP32-WROOM-32 (integrated Wifi and Bluetooth)
+* ESP32-WROOM-32 (integrated Wifi and Bluetooth), ADC resolution of 12-bits (0-4095)
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
+
+<div align="center">
+<img src="images/hardware.png" width="600"/>
+<p>Hardware Implementation</p>
+</div>
 
 ### Software Implementation
 The following steps describe the functionality of the project: 
@@ -21,7 +26,12 @@ The following steps describe the functionality of the project:
 * if value is above threshold enter in 'aware state' (read 5 times and see if 2 high values above the threshold are met, if so it means that gas is detected in the room)
 * if gas detected in room send email to the owner.
 
-### Wifi conncetion 
+<div align="center">
+<img src="images/software_diagram.png" width="1300"/>
+<p>Software Diagram</p>
+</div>
+
+### Wifi connection 
 The Wifi connection is set up using Bluetooth using Bluetooth Teminal HC-5 application. [[1]](https://github.com/narcisaguran/gas-sensor-using-esp32/blob/main/README.md#resources) <br />
 First connect to the Bluetooth device using the app and give Wifi credentials (SSID and password). After that the wifi connection is established and the Bluetooth connection is disabled. Wifi and Bluetooth use the same antenna on ESP32 device and they cannot coexist. The Wifi credentials are saved and loaded every time the ESP device is powered. <br />
 If you want to change the credentials just reboot the device and introduce them again in application.
