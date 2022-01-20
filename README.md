@@ -14,7 +14,7 @@ The hardware schematic contains the following devices:
  <br />
 <div align="center">
 <img src="images/hardware.png" width="600"/>
-<p>Fig.1 - Hardware Implementation</p>
+<p>Fig. 1 - Hardware Implementation</p>
 </div>
 
 ### Software Implementation
@@ -28,7 +28,7 @@ The following steps describe the functionality of the project:
  <br />
 <div align="center">
 <img src="images/software_diagram.png" width="1300"/>
-<p>Fig.2 - Software Diagram</p>
+<p>Fig. 2 - Software Diagram</p>
 </div>
 
 ### Wifi connection 
@@ -38,7 +38,7 @@ If you want to change the credentials just reboot the device and introduce them 
 
 <div align="center">
 <img src="images/bluetooth_app.jpg" width="400"/>
-<p>Fig.3 - Wifi connection from application</p>
+<p>Fig. 3 - Wifi connection from application</p>
 </div>
 
 ### ThingSpeak data ingestion
@@ -46,12 +46,12 @@ Every time data is read from the sensor it is saved online through ThingSpeak AP
 
 <div align="center">
 <img src="images/thingspeak_app.jpg" width="400"/>
-<p>Fig.4 - Data visualization from ThingSpeak View application</p>
+<p>Fig. 4 - Data visualization from ThingSpeak View application</p>
 </div>
 <br /><br /><br />
 <div align="center">
 <img src="images/thingspeak_web.jpg" width="800"/>
-<p>Fig.4 - Data visualization on ThingSpeak website</p>
+<p>Fig. 5 - Data visualization on ThingSpeak website</p>
 </div>
 
 ### Email alert
