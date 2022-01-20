@@ -7,16 +7,26 @@ This project aims to develop a Smoke/Combustible Gas detector using ESP32 and MQ
 Also to set up wifi credentials without hardcoding the SSID and password directly in code, a prior bluetooth connection is established via smartphone, using Bluetooth Terminal HC-05 application.
 
 ### Hardware Implementation
-The hardware schematic contains the following devices: <br \>
+The hardware schematic contains the following devices: 
 * ESP32-WROOM-32 (integrated Wifi and Bluetooth)
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
 
 ### Software Implementation
-The following steps describe the functionality of the project: < br \>
+The following steps describe the functionality of the project: 
 * boot/reboot device
 * introduce Wifi credentials from application and connect to it
 * read data coming from MQ-2 sensor
 * publish data on ThingSpeak
 * if value is above threshold enter in 'aware state' (read 5 times and see if 2 high values above the threshold are met, if so it means that gas is detected in the room)
 * if gas detected in room send email to the owner.
+
+### Wifi conncetion 
+The Wifi connection is set up using Bluetooth using Bluetooth Teminal HC-5 application. [1]
+First connect to the Bluetooth device using the app and give Wifi credentials (SSID and password). After that the wifi connection is established and the Bluetooth connection is disabled. Wifi and Bluetooth use the same antenna on ESP32 device and they cannot coexist. The Wifi credentials are saved and loaded every time the ESP device is powered. 
+If you want to change the credentials just reboot the device and introduce them again in application.
+
+### ThingSpeak data ingestion
+Every time data is read from the sensor it is saved online through ThingSpeak API along with Wifi received signal strength indicator (RSSI). I used a ThingSpeak private channel to do that, and data can also be viewed in real time on mobile phone with ThingView Free app.
+
+
