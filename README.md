@@ -50,7 +50,7 @@ Every time data is read from the sensor it is saved online through ThingSpeak AP
 </div>
 <br /><br /><br />
 <div align="center">
-<img src="images/thingspeak_web.jpg" width="600"/>
+<img src="images/thingspeak_web.jpg" width="800"/>
 <p>Fig.4 - Data visualization on ThingSpeak website</p>
 </div>
 
