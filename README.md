@@ -8,7 +8,7 @@ Also to set up wifi credentials without hardcoding the SSID and password directl
 
 ### Hardware Implementation
 The hardware schematic contains the following devices: 
-* ESP32-WROOM-32 (integrated Wifi and Bluetooth)
+* ESP32-WROOM-32 (integrated Wifi and Bluetooth), ADC resolution of 12-bits (0-4095)
 * MQ-2 Smoke/Combustible Gas sensor
 * 5V battery, ar any device that can supply 5V (e.g. Arduino Uno)
 
