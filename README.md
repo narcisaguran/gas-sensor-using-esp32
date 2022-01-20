@@ -55,7 +55,7 @@ Every time data is read from the sensor it is saved online through ThingSpeak AP
 </div>
 
 ### Email alert
-The project has the feature to send an alert email to the apartment owner using IFTTT service. The email address is hardcoded in the json that is sent by the http post request. [[2]](https://github.com/narcisaguran/gas-sensor-using-esp32/blob/main/README.md#resources) <br />
+The project has the feature to send an email alert to the apartment owner using IFTTT service. The email address is hardcoded in the json that is sent by the http post request. [[2]](https://github.com/narcisaguran/gas-sensor-using-esp32/blob/main/README.md#resources) <br />
 A gmail address was created prior to sending the alert message. This is the email address used to send messages to the hardcoded owner address.
 
 #### Resources:
